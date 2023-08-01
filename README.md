@@ -1,8 +1,8 @@
-# Jamāl-Backend
+# Jamāl-Frontend
 
 ## Description <a name="description"></a>
 
-## Jamāl-Backend is
+Jamāl-Frontend is
 
 ## Table of Contents <a name="table-of-contents"></a>
 
