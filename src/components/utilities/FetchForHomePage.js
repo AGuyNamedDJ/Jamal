@@ -35,10 +35,9 @@ const FetchForHomepage = () => {
         appointmentState: [users, setUsers],
     }
 
-    const navigate = useNavigate()
-
     // Base Fetch URL
     const BASE_URL = "https://jamal-backend.onrender.com";
+    const navigate = useNavigate()
 
     // useEffects
     // useEffects: fetchAppointments data from backend & set to appointmentsState;
@@ -60,6 +59,27 @@ const FetchForHomepage = () => {
             }
         }
         fetchAppointments();
+    }, [])
+
+    // useEffect: fetchFavorites
+    useEffect(() => {
+        async function fetchFavorites () {
+            try {
+                const response = await fetch (`${BASE_URL}/api/favorites`, {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                console.log("Response", response)
+                const favoritesData = await response.json();
+                console.log("Translated Favorites Data:", favoritesData);
+                setFavorites(favoritesData);
+            } catch (error) {
+                console.log ("Error fetching Favorites Data!")
+                console.log(error)
+            }
+        }
+        fetchFavorites();
     }, [])
 
 // Return
