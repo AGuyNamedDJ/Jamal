@@ -1,11 +1,11 @@
 // Import
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-import { Outlet } from "react-router";
+import { Outlet, useNavigate } from "react-router-dom";
 
-// Fetch
+// Initial Fetch
 const FetchForHomepage = () => {
-    // Establish new state;
+    // Establish new state variables w/ useState Hook;
     const [appointments, setAppointments] = useState([]);
     const [favorites, setFavorites] = useState([]);
     const [franchiseLocations, setFranchiseLocations] = useState([]);
@@ -19,6 +19,7 @@ const FetchForHomepage = () => {
     const [services, setServices] = useState([]);
     const [users, setUsers] = useState([]);
 
+    // Context Object to pass to children components;
     const contextObject = {
         appointmentState: [appointments, setAppointments],
         appointmentState: [favorites, setFavorites],
@@ -34,11 +35,13 @@ const FetchForHomepage = () => {
         appointmentState: [users, setUsers],
     }
 
-    // Base URL
+    const navigate = useNavigate()
+
+    // Base Fetch URL
     const BASE_URL = "https://jamal-backend.onrender.com";
 
     // useEffects
-    // useEffects: fetchManufacturer
+    // useEffects: fetchAppointments data from backend & set to appointmentsState;
     useEffect(() => {
         async function fetchAppointments () {
             try {
