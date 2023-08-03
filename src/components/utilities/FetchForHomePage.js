@@ -82,6 +82,69 @@ const FetchForHomepage = () => {
         fetchFavorites();
     }, [])
 
+    // useEffect: fetchFranchiseLocations
+    useEffect(() => {
+        async function fetchFranchiseLocations () {
+            try {
+                const response = await fetch (`${BASE_URL}/api/locations`, {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                console.log("Response", response)
+                const franchiseLocationsData = await response.json();
+                console.log("Translated Franchise Locations Data:", franchiseLocationsData);
+                setFranchiseLocations(franchiseLocationsData);
+            } catch (error) {
+                console.log ("Error fetching Franchise Locations Data!")
+                console.log(error)
+            }
+        }
+        fetchFranchiseLocations();
+    }, [])
+
+    // useEffect: fetchMessages
+    useEffect(() => {
+        async function fetchMessages () {
+            try {
+                const response = await fetch (`${BASE_URL}/api/messages`, {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                console.log("Response", response)
+                const messagesData = await response.json();
+                console.log("Translated Message Data:", messagesData);
+                setMessages(messagesData);
+            } catch (error) {
+                console.log ("Error fetching Message Data!")
+                console.log(error)
+            }
+        }
+        fetchMessages();
+    }, [])
+
+    // useEffect: fetchNotifications
+    useEffect(() => {
+        async function fetchNotifications () {
+            try {
+                const response = await fetch (`${BASE_URL}/api/notifications`, {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                console.log("Response", response)
+                const notificationsData = await response.json();
+                console.log("Translated Notification Data:", notificationsData);
+                setNotifications(notificationsData);
+            } catch (error) {
+                console.log ("Error fetching Notification Data!")
+                console.log(error)
+            }
+        }
+        fetchNotifications();
+    }, [])
+
 // Return
     return(
         <div>
