@@ -19,7 +19,6 @@ const FetchForHomepage = () => {
     const [services, setServices] = useState([]);
     const [users, setUsers] = useState([]);
 
-
     const contextObject = {
         appointmentState: [appointments, setAppointments],
         appointmentState: [favorites, setFavorites],
@@ -33,11 +32,34 @@ const FetchForHomepage = () => {
         appointmentState: [salonSuites, setSalonSuites],
         appointmentState: [services, setServices],
         appointmentState: [users, setUsers],
-
     }
 
-// Functional Component
-const FetchForHomePage = () => {
+    // Base URL
+    const BASE_URL = "https://jamal-backend.onrender.com";
+
+    // useEffects
+    // useEffects: fetchManufacturer
+    useEffect(() => {
+        async function fetchAppointments () {
+            try {
+                const response = await fetch (`${BASE_URL}/api/appointments`, {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                console.log("Response", response)
+                const appointmentsData = await response.json();
+                console.log("Translated Appointment Data:", appointmentsData);
+                setAppointments(appointmentsData);
+            } catch (error) {
+                console.log ("Error fetching Appointment Data!")
+                console.log(error)
+            }
+        }
+        fetchAppointments();
+    }, [])
+
+// Return
     return(
         <div>
             <div>
@@ -49,4 +71,4 @@ const FetchForHomePage = () => {
 };
 
 // Export
-export default FetchForHomePage;
+export default FetchForHomepage;
