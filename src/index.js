@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             {
                 index:true,
                 element: <Homepage />
-            }
+            },
         ]
     }
 ])

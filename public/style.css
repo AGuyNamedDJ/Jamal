@@ -1,0 +1,17 @@
+/* Global */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling if width > vw */
+};
+
+#homepage {
+    padding: 5vh;
+};
+
+/* Other page styles here */

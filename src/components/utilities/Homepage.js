@@ -1,6 +1,7 @@
 // Import
 import React from "react";
 
+// Functional Component
 const Homepage = () => {
     return(
         <div>

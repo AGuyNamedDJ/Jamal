@@ -1,10 +1,14 @@
 // Import
 import React from "react";
 
+// Functional Component
 const FetchForHomePage = () => {
     return(
         <div>
-            <p>Here is your Fetch page</p>
+            <div>
+                <Navbar context={contextObject}/>
+            </div>
+            <Outlet context={contextObject} />
         </div>
     )
 };
