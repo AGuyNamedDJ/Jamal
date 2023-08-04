@@ -289,7 +289,7 @@ const FetchForHomepage = () => {
                 console.log("Translated User Data:", userData);
                 setSalonRenters(userData.user);
             } catch (error) {
-                console.log ("Error fetching Usser Data!")
+                console.log ("Error fetching User Data!")
                 console.log(error)
             }
         }
