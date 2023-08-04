@@ -10,6 +10,7 @@ import Homepage from "./components/utilities/Homepage";
 import Template from "./components/utilities/template";
 
 // Import Pages
+import Locations from "./components/pages/Locations";
 
 // Browser Router 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 index:true,
                 element: <Homepage />
+            },
+            {
+                path: "/locations",
+                element: <Locations />
             },
         ]
     }
