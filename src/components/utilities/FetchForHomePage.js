@@ -21,18 +21,18 @@ const FetchForHomepage = () => {
 
     // Context Object to pass to children components;
     const contextObject = {
-        appointmentState: [appointments, setAppointments],
-        appointmentState: [favorites, setFavorites],
-        appointmentState: [franchiseLocations, setFranchiseLocations],
-        appointmentState: [messages, setMessages],
-        appointmentState: [notifications, setNotifications],
-        appointmentState: [payments, setPayments],
-        appointmentState: [promotions, setPromotions],
-        appointmentState: [reviews, setReviews],
-        appointmentState: [salonRenters, setSalonRenters],
-        appointmentState: [salonSuites, setSalonSuites],
-        appointmentState: [services, setServices],
-        appointmentState: [users, setUsers],
+        appointmentsState: [appointments, setAppointments],
+        favoritesState: [favorites, setFavorites],
+        franchiseLocationsState: [franchiseLocations, setFranchiseLocations],
+        messagesState: [messages, setMessages],
+        notificationsState: [notifications, setNotifications],
+        paymentsState: [payments, setPayments],
+        promotionsState: [promotions, setPromotions],
+        reviewsState: [reviews, setReviews],
+        salonRentersState: [salonRenters, setSalonRenters],
+        salonSuitesState: [salonSuites, setSalonSuites],
+        servicesState: [services, setServices],
+        usersState: [users, setUsers],
     }
 
     // Base Fetch URL
