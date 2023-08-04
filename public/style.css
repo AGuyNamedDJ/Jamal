@@ -2,7 +2,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -10,9 +10,8 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling if width > vw */
 }
 
-#homepage {
-    padding: 5vh;
-}
+/* Colors */
+/* color: #C2B19C; Brown */
 
 /* Utilities */
 /* Utilities: ErrorPage */
@@ -34,24 +33,30 @@ body {
 }
 
 /* Utilities: HomePage */
+#homepage {
+    padding: 5vh;
+}
+
 /* Utilities: Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    height: 10vh;
-    padding: 0 2vw; 
+    height: 8vh;
+    padding: 0 4vw; 
 }
 
 .left-group {
     display: flex;
+    font: 'Roboto Serif', serif;
     justify-content: flex-start; 
     width: 30vw; 
 }
 
 .right-group {
     display: flex;
+    font: 'Roboto Serif', serif;
     justify-content: flex-end; 
     width: 30vw;
 }
@@ -59,23 +64,57 @@ body {
 .navbar-text {
     color: white;
     text-decoration: none;
-    font-size: 1.2vh;
-    text-transform: uppercase;
+    font-size: 1.3vh;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05vh;
     margin: 0 1vw;
 }
-
-.navbar-text:visited, .navbar-text:active {
+.navbar-text:visited {
     color: white;
 }
 
 .navbar-text:hover {
-    color: brown;
+    color: #C2B19C;
+}
+
+.navbar-text:active {
+    opacity: 0.7;
 }
 
 #navbar-text {
-    font-size: 2vh;
+    font-size: 3vh;
+    font: 'Roboto Serif', serif;
+    text-decoration: none;
+    letter-spacing: 0.3vh;
 }
 
+#navbar-text:visited {
+    color: white;
+}
+
+#navbar-text:active {
+    opacity: 0.7;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3vh;
+    font: 'Roboto Serif', serif;
+    cursor: pointer;
+    text-align: left;
+}
+
+.search-text {
+    font-size: 1.2vh;
+    font: 'Roboto Serif', serif;
+    letter-spacing: 0.05vh;
+    position: relative;
+    bottom: 0.35vh;
+    padding-left: 0.8vh;
+    /* text-transform: uppercase; */
+}
 
 /* Pages */
 /* Pages: Location */
