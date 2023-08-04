@@ -33,9 +33,49 @@ body {
     max-width: 50vw;
 }
 
-
 /* Utilities: HomePage */
 /* Utilities: Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    padding: 0 2vw; 
+}
+
+.left-group {
+    display: flex;
+    justify-content: flex-start; 
+    width: 30vw; 
+}
+
+.right-group {
+    display: flex;
+    justify-content: flex-end; 
+    width: 30vw;
+}
+
+.navbar-text {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vh;
+    text-transform: uppercase;
+    margin: 0 1vw;
+}
+
+.navbar-text:visited, .navbar-text:active {
+    color: white;
+}
+
+.navbar-text:hover {
+    color: brown;
+}
+
+#navbar-text {
+    font-size: 2vh;
+}
+
 
 /* Pages */
 /* Pages: Location */
