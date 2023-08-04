@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import { Outlet, useNavigate } from "react-router-dom";
 
+// Create a context
+export const OutletContext = React.createContext();
+
 // Initial Fetch
 const FetchForHomepage = () => {
     // Establish new state variables w/ useState Hook;
@@ -297,12 +300,14 @@ const FetchForHomepage = () => {
     }, [])
 
 // Return
-    return(
+    return (
         <div>
             <div>
                 <Navbar context={contextObject}/>
             </div>
-            <Outlet context={contextObject} />
+            <div>
+                <Outlet context={contextObject} />
+            </div>
         </div>
     )
 };

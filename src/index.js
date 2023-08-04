@@ -16,7 +16,7 @@ import Locations from "./components/pages/Locations";
 const router = createBrowserRouter([
     {
         path:"/",
-        elemnt: <FetchForHomePage />,
+        element: <FetchForHomePage />,
         errorElement: <ErrorPage />,
         children: [
             {
