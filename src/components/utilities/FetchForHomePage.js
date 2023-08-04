@@ -276,9 +276,9 @@ const FetchForHomepage = () => {
 
     // useEffect: fetchUser
     useEffect(() => {
-        if(!localStorage.getItem("token")) {
-            navigate("/login")
-        }
+        // if(!localStorage.getItem("token")) {
+        //     navigate("/login")
+        // }
         async function fetchUser () {
             try {
                 const response = await fetch (`${BASE_URL}/api/users`, {

@@ -8,14 +8,32 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden; /* Prevents horizontal scrolling if width > vw */
-};
+}
 
 #homepage {
     padding: 5vh;
-};
+}
 
 /* Utilities */
 /* Utilities: ErrorPage */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#error-text {
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+#error-image {
+    max-width: 50vw;
+}
+
+
 /* Utilities: HomePage */
 /* Utilities: Navbar */
 
