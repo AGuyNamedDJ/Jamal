@@ -1,6 +1,5 @@
 // Import
 import React from "react";
-import ChicagoRiver from "../videos/ChicagoRiver.mp4";
 import Chicago1 from "../videos/Chicago1.mp4";
 import { Link } from 'react-router-dom';
 
