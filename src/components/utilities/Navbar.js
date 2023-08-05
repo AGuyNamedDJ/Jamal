@@ -9,6 +9,7 @@ const Navbar = ({}) => {
 
     return (
         <>
+            {/* Web Navbar */}
             <nav className="navbar">
                 <div className="left-group">
                     <Link to="/locations" className="navbar-text">Locations</Link>
@@ -26,6 +27,8 @@ const Navbar = ({}) => {
                     <Link to="/account" className="navbar-text">MyJamāl</Link>
                 </div>
             </nav>
+
+            {/* Mobile Navbar */}
             <nav className="navbar-mobile">
                 <button className="dropdown-button" onClick={() => setDropdownOpen(!isDropdownOpen)}>
                     <FontAwesomeIcon icon={faBars} />
