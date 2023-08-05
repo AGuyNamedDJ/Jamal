@@ -92,7 +92,7 @@ body {
     }
 
     .footer-section1 a {
-        font-size: 1.2vh; 
+        font-size: 1vh; 
     }
 
     .footer-section2 {
@@ -285,41 +285,53 @@ body {
     padding-left: 0.8vh;
 }
 
-/* iPhone Mini or Other*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-
-    .navbar-text, .search-button {
-        font-size: 1.0vh; 
-    }
-
-    .search-button {
-        position: relative;
-        top: 0.8vh;
-    }
-    #navbar-text {
-        font-size: 2.5vh; 
-    }
-
-    .search-text {
-        font-size: 1.00vh; 
-        position: relative;
-        padding-left: 3vw;
-        right: -2vw;
-        bottom: 1.5vh;
-    }
+/* Mobile Navbar */
+.navbar-mobile {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 1vh 2vw;
 }
 
-/* iPhone 15, 15 Pro, 15 Pro Max & Other*/
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 896px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
+.dropdown-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+}
 
-    .navbar-text, .search-button {
-        font-size: 1.01vh; 
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1vh;
+}
+
+#navbar-text-mobile {
+    font-size: 3vh;
+    font: 'Roboto Serif', serif;
+    text-decoration: none;
+    letter-spacing: 0.3vh;
+    color: white;
+}
+
+/* iPhone Mini or Other Small Devices */
+@media only screen 
+  and (max-width: 812px) {
+
+    .navbar {
+        display: none; /* Hide the desktop navbar on small screens */
+    }
+
+    .navbar-mobile {
+        display: flex; /* Display the mobile navbar on small screens */
+    }
+
+    .navbar-text,
+    .search-button {
+        font-size: 1.0vh;
     }
 
     .search-button {
@@ -327,12 +339,12 @@ body {
         top: 0.8vh;
     }
 
-    #navbar-text {
-        font-size: 2.5vh; 
+    #navbar-text-mobile {
+        font-size: 2.5vh;
     }
 
     .search-text {
-        font-size: 1.00vh; 
+        font-size: 1.00vh;
         position: relative;
         padding-left: 3vw;
         right: -2vw;
