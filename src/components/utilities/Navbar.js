@@ -35,16 +35,17 @@ const Navbar = ({}) => {
                 </button>
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
-                        <Link to="/locations" className="navbar-text">Locations</Link>
-                        <Link to="/book" className="navbar-text">Appointments</Link>
-                        <Link to="/join" className="navbar-text">Lease</Link>
-                        {/* Add other links as needed */}
+                        <Link to="/locations" className="navbar-mobile-link">Locations</Link>
+                        <Link to="/book" className="navbar-mobile-link">Appointments</Link>
+                        <Link to="/join" className="navbar-mobile-link">Lease</Link>
+                        <Link to="/about" className="navbar-mobile-link">About</Link>
+                        <Link to="/account" className="navbar-mobile-link">MyJamāl</Link>
                     </div>
                 )}
                 <Link to="/" id="navbar-text-mobile">JAMAL</Link>
                 <Link to="/search" className="navbar-text">
                     <button className="search-button">
-                        <FontAwesomeIcon icon={faSearch} /> <span className="search-text">Search</span>
+                        <FontAwesomeIcon icon={faSearch} /> 
                     </button>
                 </Link>
             </nav>

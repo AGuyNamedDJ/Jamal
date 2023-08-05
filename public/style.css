@@ -303,11 +303,16 @@ body {
 }
 
 .dropdown-menu {
-    flex-direction: column; /* Display links in a vertical column */
-    background-color: black;
+    display: flex; /* Allows child elements to align in a column */
+    flex-direction: column; /* Align child elements vertically */
+    background-color: black; /* Set the background color */
     padding: 1vh;
-    position: absolute; /* Positioning to overlay content */
+    position: fixed; /* Fixed positioning */
     width: 100%; /* Full width to fit screen */
+    height: 100%; /* Full height to fit screen */
+    top: 0; /* Align with the top of the screen */
+    left: 0; /* Align with the left of the screen */
+    z-index: 10; /* Make sure it appears above other content */
 }
 
 #navbar-text-mobile {
@@ -315,14 +320,31 @@ body {
     font: 'Roboto Serif', serif;
     text-decoration: none;
     letter-spacing: 0.3vh;
-    color: white; /* Set the color as needed */
+    color: white;
     text-align: center;
 }
 
+.navbar-mobile-link {
+    font-size: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-mobile-link:after {
+    content: '>';
+    font-size: 3vh;
+    color: white;
+}
+
+
 /* iPhone Mini or Other Small Devices */
 @media only screen 
-  and (max-width: 812px) {
-
+and (max-width: 812px) {
     .navbar {
         display: none; /* Hide the desktop navbar on small screens */
     }
@@ -351,6 +373,20 @@ body {
         padding-left: 3vw;
         right: -2vw;
         bottom: 1.5vh;
+    }
+    .dropdown-menu {
+        align-items: flex-start;
+    }
+
+    .navbar-text {
+        font-size: 3vh; /* Set a larger font size */
+        width: 100%; /* Take up the full width */
+        display: flex; /* Allows alignment of text and arrow */
+        justify-content: space-between; /* Space between text and arrow */
+        align-items: center; /* Center-align text and arrow vertically */
+        padding: 1vh 2vw; /* Add padding around the text */
+        color: white; /* Set the text color */
+        text-decoration: none; /* Remove any link underlining */
     }
 }
 
