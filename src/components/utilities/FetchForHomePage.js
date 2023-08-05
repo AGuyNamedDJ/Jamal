@@ -1,6 +1,7 @@
 // Import
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Outlet, useNavigate } from "react-router-dom";
 
 // Create a context
@@ -308,6 +309,7 @@ const FetchForHomepage = () => {
             <div>
                 <Outlet context={contextObject} />
             </div>
+            <Footer />
         </div>
     )
 };

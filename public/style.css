@@ -32,6 +32,93 @@ body {
     max-width: 50vw;
 }
 
+/* Utilities: Footer */
+.footer {
+    color: white; 
+    background-color: black; 
+    font: 'Roboto Serif', serif;
+}
+
+.footer-section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 4vw;
+    font: 'Roboto Serif', serif;
+}
+
+.column {
+    width: 20%;
+}
+
+.column a {
+    display: block;
+    opacity: 70%;
+    line-height: 2.4vh;
+    text-decoration: none; 
+    color: inherit; /* Inherits the color from the parent element */
+    transition: color 0.5s;
+}
+
+.column a:hover {
+    color: #C2B19C; /* Color change on hover */
+}
+
+.column a:active {
+    opacity: 50%; /* Opacity drop when clicked */
+}
+
+.separator {
+    border-top: 0.001px solid white;
+    opacity: 15%;
+    width: 100vw;
+    margin: 2vh 0;
+}
+
+.footer-section2 {
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 2.5vh;
+    font: 'Roboto Serif', serif;
+}
+
+/* iPhone Mini or other*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .column h3 {
+        font-size: 1.5vh; 
+    }
+
+    .footer-section1 a {
+        font-size: 1.2vh; 
+    }
+
+    .footer-section2 {
+        font-size: 2.4vh; 
+    }
+}
+
+/* iPhone 15, 15 Pro, 15 Pro Max */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .column h3 {
+        font-size: 1.5vh; 
+    }
+
+    .footer-section1 a {
+        font-size: 1.2vh; 
+    }
+
+    .footer-section2 {
+        font-size: 2.4vh; 
+    }
+}
+
 /* Utilities: HomePage */
 #homepage {
     padding: 5vh;
