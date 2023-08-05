@@ -81,7 +81,7 @@ body {
     font: 'Roboto Serif', serif;
 }
 
-/* iPhone Mini or other*/
+/* iPhone Mini or Other*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -100,7 +100,7 @@ body {
     }
 }
 
-/* iPhone 15, 15 Pro, 15 Pro Max */
+/* iPhone 15, 15 Pro, 15 Pro Max & Other */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 896px) 
@@ -132,6 +132,14 @@ body {
     background-color: black;
     height: 8vh;
     padding: 0 4vw; 
+}
+
+.left-group,
+.right-group {
+    display: flex;
+    font: 'Roboto Serif', serif;
+    align-items: center;
+    width: 30vw;
 }
 
 .left-group {
@@ -198,10 +206,66 @@ body {
     font: 'Roboto Serif', serif;
     letter-spacing: 0.05vh;
     position: relative;
-    bottom: 0.35vh;
+    bottom: 0.1vh;
     padding-left: 0.8vh;
     /* text-transform: uppercase; */
 }
+
+/* iPhone Mini or Other*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .navbar-text, .search-button {
+        font-size: 1.0vh; 
+    }
+
+    .search-button {
+        position: relative;
+        top: 0.8vh;
+    }
+    #navbar-text {
+        font-size: 2.5vh; 
+    }
+
+    .search-text {
+        font-size: 1.00vh; 
+        position: relative;
+        padding-left: 3vw;
+        right: -2vw;
+        bottom: 1.5vh;
+    }
+}
+
+/* iPhone 15, 15 Pro, 15 Pro Max & Other*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .navbar-text, .search-button {
+        font-size: 1.01vh; 
+    }
+
+    .search-button {
+        position: relative;
+        top: 0.8vh;
+    }
+
+    #navbar-text {
+        font-size: 2.5vh; 
+    }
+
+    .search-text {
+        font-size: 1.00vh; 
+        position: relative;
+        padding-left: 3vw;
+        right: -2vw;
+        bottom: 1.5vh;
+    }
+}
+
 
 /* Pages */
 /* Pages: Location */
