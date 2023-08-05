@@ -1,7 +1,8 @@
+// Imports
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // Component
 const Navbar = ({}) => {
@@ -30,24 +31,48 @@ const Navbar = ({}) => {
 
             {/* Mobile Navbar */}
             <nav className="navbar-mobile">
-                <button className="dropdown-button" onClick={() => setDropdownOpen(!isDropdownOpen)}>
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
+                <div className="left-group">
+                <div className="left-group">
+                    <button className="dropdown-button" onClick={() => setDropdownOpen(!isDropdownOpen)}>
+                        <FontAwesomeIcon icon={isDropdownOpen ? faTimes : faBars} />
+                    </button>
+                </div>
+
+                </div>
+                <div className="center-group">
+                    <Link to="/" id="navbar-text-mobile">JAMAL</Link>
+                </div>
+                <div className="right-group">
+                    <Link to="/search" className="navbar-text">
+                        <button className="search-button">
+                            <FontAwesomeIcon icon={faSearch} />
+                        </button>
+                    </Link>
+                </div>
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
-                        <Link to="/locations" className="navbar-mobile-link">Locations</Link>
-                        <Link to="/book" className="navbar-mobile-link">Appointments</Link>
-                        <Link to="/join" className="navbar-mobile-link">Lease</Link>
-                        <Link to="/about" className="navbar-mobile-link">About</Link>
-                        <Link to="/account" className="navbar-mobile-link">MyJamāl</Link>
+                        <Link to="/locations" className="navbar-mobile-link">
+                            <span className="link-text">Locations</span> <span className="arrow">{'>'}</span>
+
+                        </Link>
+                        <Link to="/book" className="navbar-mobile-link">
+                            <span className="link-text">Appointments</span> <span className="arrow">{'>'}</span>
+
+                        </Link>
+                        <Link to="/join" className="navbar-mobile-link">
+                            <span className="link-text">Lease</span> <span className="arrow">{'>'}</span>
+
+                        </Link>
+                        <Link to="/about" className="navbar-mobile-link">
+                            <span className="link-text">About</span> <span className="arrow">{'>'}</span>
+
+                        </Link>
+                        <Link to="/account" className="navbar-mobile-link">
+                            <span className="link-text">MyJamāl</span> <span className="arrow">{'>'}</span>
+
+                        </Link>
                     </div>
                 )}
-                <Link to="/" id="navbar-text-mobile">JAMAL</Link>
-                <Link to="/search" className="navbar-text">
-                    <button className="search-button">
-                        <FontAwesomeIcon icon={faSearch} /> 
-                    </button>
-                </Link>
             </nav>
         </>
     );

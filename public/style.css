@@ -292,7 +292,21 @@ body {
     align-items: center;
     background-color: black;
     padding: 1vh 2vw;
+    position: relative;
 }
+
+.navbar-mobile .left-group,
+.navbar-mobile .center-group,
+.navbar-mobile .right-group {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-mobile .center-group {
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
 
 .dropdown-button {
     background-color: transparent;
@@ -303,16 +317,15 @@ body {
 }
 
 .dropdown-menu {
-    display: flex; /* Allows child elements to align in a column */
-    flex-direction: column; /* Align child elements vertically */
-    background-color: black; /* Set the background color */
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     padding: 1vh;
-    position: fixed; /* Fixed positioning */
-    width: 100%; /* Full width to fit screen */
-    height: 100%; /* Full height to fit screen */
-    top: 0; /* Align with the top of the screen */
-    left: 0; /* Align with the left of the screen */
-    z-index: 10; /* Make sure it appears above other content */
+    position: absolute;
+    width: 100%;
+    top: 100%; 
+    left: 0;
+    z-index: 10;
 }
 
 #navbar-text-mobile {
@@ -325,8 +338,6 @@ body {
 }
 
 .navbar-mobile-link {
-    font-size: 3vh;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,11 +346,23 @@ body {
     text-decoration: none;
 }
 
-.navbar-mobile-link:after {
-    content: '>';
+.link-text {
+    font-size: 3vh;
+    flex-grow: 1;
+}
+
+.navbar-mobile-link .link-text {
+    text-align: left;
+    flex-grow: 1; /* Allows the text to take up the remaining space */
+}
+
+.arrow {
     font-size: 3vh;
     color: white;
+    text-align: right;
+    display: inline-block;
 }
+
 
 
 /* iPhone Mini or Other Small Devices */
@@ -379,14 +402,14 @@ and (max-width: 812px) {
     }
 
     .navbar-text {
-        font-size: 3vh; /* Set a larger font size */
-        width: 100%; /* Take up the full width */
-        display: flex; /* Allows alignment of text and arrow */
-        justify-content: space-between; /* Space between text and arrow */
-        align-items: center; /* Center-align text and arrow vertically */
-        padding: 1vh 2vw; /* Add padding around the text */
-        color: white; /* Set the text color */
-        text-decoration: none; /* Remove any link underlining */
+        font-size: 3vh; 
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 1vh 2vw; 
+        color: white; 
+        text-decoration: none; 
     }
 }
 
