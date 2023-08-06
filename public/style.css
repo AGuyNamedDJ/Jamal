@@ -81,6 +81,21 @@ body {
     font: 'Roboto Serif', serif;
 }
 
+/* Small Devices */
+@media only screen and (max-width: 375px) {
+    .column h3 {
+        font-size: 1.2vh;
+    }
+
+    .footer-section1 a {
+        font-size: 0.8vh; 
+    }
+
+    .footer-section2 {
+        font-size: 2.0vh;
+    }
+}
+
 /* iPhone Mini or Other*/
 @media only screen 
   and (min-device-width: 375px) 
