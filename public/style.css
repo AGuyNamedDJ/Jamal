@@ -41,9 +41,10 @@ body {
 
 .footer-section1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1vh 4vw;
     font: 'Roboto Serif', serif;
+    margin-left: 3vw;
 }
 
 .column {
