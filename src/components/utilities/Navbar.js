@@ -51,25 +51,35 @@ const Navbar = ({}) => {
                 </div>
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
-                        <Link to="/locations" className="navbar-mobile-link">
-                            <span className="link-text">Locations</span> <span className="arrow">{'>'}</span>
-
-                        </Link>
+    <Link to="/locations" className="navbar-mobile-link">
+        <div className="menu-item">
+            <div className="link-container">
+                <span className="link-text">Locations</span>
+            </div>
+            <div className="arrow-container">
+                <span className="arrow">{'>'}</span>
+            </div>
+        </div>
+    </Link>
                         <Link to="/book" className="navbar-mobile-link">
+                        <div className="menu-item">
                             <span className="link-text">Appointments</span> <span className="arrow">{'>'}</span>
-
+                            </div>
                         </Link>
                         <Link to="/join" className="navbar-mobile-link">
+                        <div className="menu-item">
                             <span className="link-text">Lease</span> <span className="arrow">{'>'}</span>
-
+                            </div>
                         </Link>
                         <Link to="/about" className="navbar-mobile-link">
+                        <div className="menu-item">
                             <span className="link-text">About</span> <span className="arrow">{'>'}</span>
-
+                            </div>
                         </Link>
                         <Link to="/account" className="navbar-mobile-link">
+                        <div className="menu-item">
                             <span className="link-text">MyJamāl</span> <span className="arrow">{'>'}</span>
-
+                            </div>
                         </Link>
                     </div>
                 )}

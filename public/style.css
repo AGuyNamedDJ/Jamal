@@ -339,29 +339,32 @@ body {
 
 .navbar-mobile-link {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1vh 2vw;
     color: white;
     text-decoration: none;
 }
 
-.link-text {
-    font-size: 3vh;
-    flex-grow: 1;
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.navbar-mobile-link .link-text {
-    text-align: left;
-    flex-grow: 1; /* Allows the text to take up the remaining space */
+.link-text {
+    font-size: 3vh;
+}
+
+.link-container,
+.arrow-container {
+    display: flex;
+    flex-grow: 1; /* Allows them to take up the remaining space */
 }
 
 .arrow {
     font-size: 3vh;
     color: white;
-    text-align: right;
-    display: inline-block;
 }
+
 
 
 
