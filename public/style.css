@@ -344,29 +344,21 @@ body {
     text-decoration: none;
 }
 
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .link-text {
     font-size: 3vh;
 }
 
-.link-container,
-.arrow-container {
-    display: flex;
-    flex-grow: 1; /* Allows them to take up the remaining space */
-}
-
-.arrow {
-    font-size: 3vh;
+.navbar-mobile-link:visited {
     color: white;
 }
 
+.navbar-mobile-link:hover {
+    color: #C2B19C;
+}
 
-
+.navbar-mobile-link:active {
+    opacity: 0.7; /* Opacity drop when clicked */
+}
 
 /* iPhone Mini or Other Small Devices */
 @media only screen 

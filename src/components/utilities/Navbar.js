@@ -28,16 +28,12 @@ const Navbar = ({}) => {
                     <Link to="/account" className="navbar-text">MyJamāl</Link>
                 </div>
             </nav>
-
             {/* Mobile Navbar */}
             <nav className="navbar-mobile">
-                <div className="left-group">
                 <div className="left-group">
                     <button className="dropdown-button" onClick={() => setDropdownOpen(!isDropdownOpen)}>
                         <FontAwesomeIcon icon={isDropdownOpen ? faTimes : faBars} />
                     </button>
-                </div>
-
                 </div>
                 <div className="center-group">
                     <Link to="/" id="navbar-text-mobile">JAMAL</Link>
@@ -51,36 +47,11 @@ const Navbar = ({}) => {
                 </div>
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
-    <Link to="/locations" className="navbar-mobile-link">
-        <div className="menu-item">
-            <div className="link-container">
-                <span className="link-text">Locations</span>
-            </div>
-            <div className="arrow-container">
-                <span className="arrow">{'>'}</span>
-            </div>
-        </div>
-    </Link>
-                        <Link to="/book" className="navbar-mobile-link">
-                        <div className="menu-item">
-                            <span className="link-text">Appointments</span> <span className="arrow">{'>'}</span>
-                            </div>
-                        </Link>
-                        <Link to="/join" className="navbar-mobile-link">
-                        <div className="menu-item">
-                            <span className="link-text">Lease</span> <span className="arrow">{'>'}</span>
-                            </div>
-                        </Link>
-                        <Link to="/about" className="navbar-mobile-link">
-                        <div className="menu-item">
-                            <span className="link-text">About</span> <span className="arrow">{'>'}</span>
-                            </div>
-                        </Link>
-                        <Link to="/account" className="navbar-mobile-link">
-                        <div className="menu-item">
-                            <span className="link-text">MyJamāl</span> <span className="arrow">{'>'}</span>
-                            </div>
-                        </Link>
+                        <Link to="/locations" className="navbar-mobile-link"><span className="link-text">Locations</span></Link>
+                        <Link to="/book" className="navbar-mobile-link"><span className="link-text">Appointments</span></Link>
+                        <Link to="/join" className="navbar-mobile-link"><span className="link-text">Lease</span></Link>
+                        <Link to="/about" className="navbar-mobile-link"><span className="link-text">About</span></Link>
+                        <Link to="/account" className="navbar-mobile-link"><span className="link-text">MyJamāl</span></Link>
                     </div>
                 )}
             </nav>
