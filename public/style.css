@@ -205,7 +205,7 @@ body {
     }
   
     .hero-buttons {
-      flex-direction: column; /* Stack the buttons vertically */
+      flex-direction: column;
       align-items: center; 
     }
   
@@ -537,14 +537,42 @@ and (max-width: 812px) {
 }
 
 .location-name {
-    font-size: 4vh;
+    font-size: 3.8vw !important;
+    font-weight: lighter;
     color: #C2B19C;
     font-family: 'Euphoria Script', cursive;
+    margin-top: 1vw;
 }
 
 .location-address {
-    font-size: 1.5vw;
+    font-size: 1.7vw !important;
+    font-weight: lighter;
+    margin-top: -1vw;
     color: #C2B19C;
+    margin-bottom: 3vw;
+}
+
+.availability-link button {
+    font-size: 0.9vw;
+    color: #FFFFFF; 
+    background-color: #95744b;
+    padding: 1vh 2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 0.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+}
+
+.availability-link button:hover {
+    background-color: #a7a294;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.availability-link button:active {
+    opacity: 0.7;
 }
 
 .location-images {
