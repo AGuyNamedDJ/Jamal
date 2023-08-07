@@ -14,7 +14,7 @@ const Homepage = () => {
                 <h1>Our Flagship: Chicago Awaits</h1>
                 <div className="hero-buttons">
                     <Link to="/link1" className="hero-button">Explore Services</Link>
-                    <Link to="/link2" className="hero-button">Join Us</Link>
+                    <Link to="/find-your-space" className="hero-button">Join Us</Link>
                 </div>
             </div>
         </div>

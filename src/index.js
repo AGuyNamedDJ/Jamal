@@ -7,10 +7,14 @@ import { createRoot } from "react-dom/client";
 import ErrorPage from "./components/utilities/ErrorPage";
 import FetchForHomePage from "./components/utilities/FetchForHomePage";
 import Homepage from "./components/utilities/Homepage";
-import Template from "./components/utilities/template";
 
-// Import Pages
-import Locations from "./components/pages/Locations";
+// Import Pages: Admins
+
+// Import Pages: Customers
+import Locations from "./components/pages/Customers/Locations";
+
+// Import Pages: Partners
+import FindYourSpace from "./components/pages/Partners/FindYourSpace";
 
 // Browser Router 
 const router = createBrowserRouter([
@@ -22,6 +26,10 @@ const router = createBrowserRouter([
             {
                 index:true,
                 element: <Homepage />
+            },
+            {
+                path: "/find-your-space",
+                element: <FindYourSpace />
             },
             {
                 path: "/locations",
