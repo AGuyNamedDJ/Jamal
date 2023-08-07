@@ -292,14 +292,14 @@ body {
     text-align: left;
 }
 
-.search-text {
+/* .search-text {
     font-size: 1.2vh;
     font: 'Roboto Serif', serif;
     letter-spacing: 0.05vh;
     position: relative;
     bottom: 0.1vh;
     padding-left: 0.8vh;
-}
+} */
 
 /* Mobile Navbar */
 .navbar-mobile {
@@ -389,12 +389,13 @@ and (max-width: 812px) {
 
     .navbar-text,
     .search-button {
-        font-size: 1.0vh;
+        font-size: 2.0vh;
     }
 
     .search-button {
         position: relative;
-        top: 0.8vh;
+        top: 0.2vh;
+        left: 17vw;
     }
 
     #navbar-text-mobile {
