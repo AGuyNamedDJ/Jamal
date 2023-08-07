@@ -471,8 +471,9 @@ and (max-width: 812px) {
   
   .text-content p {
     font-size: 1.6vw;
+    font-weight: lighter;
     opacity: 70%;
-    text-align: justify;
+    text-align: center;
     line-height: 2vw;
     max-width: 30vw;
     margin: 0 auto;
@@ -505,56 +506,90 @@ and (max-width: 812px) {
 .locations-section {
     text-align: center;
     margin-top: 8vw;
-  }
+}
   
-  .locations-title h2 {
+.locations-title h2 {
     font-size: 3.3vw;
+    font-weight: lighter;
     color: #C2B19C;
-  }
+    font: 'Roboto Serif', serif ;
+}
   
-  .divider {
+.divider {
     width: 50%;
     height: 1px;
     background-color: rgba(194, 177, 156, 0.33); /* Thin transparent line */
     margin: auto;
     margin-top: 4vw;
-  }
+}
   
-  .location {
+.location {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     align-items: center;
     margin: 4vh 0;
-  }
+}
   
-  .location-info h3,
-  .location-info p,
-  .availability-link {
-    font-size: 1.5vw; /* Adjust as needed */
-    /* Separate fonts and CSS for each element */
-  }
-  
-  .location-images {
+.location-info h3,
+.location-info p,
+.availability-link {
+    font-size: 1.5vw;
+}
+
+.location-name {
+    font-size: 4vh;
+    color: #C2B19C;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.location-address {
+    font-size: 1.5vw;
+    color: #C2B19C;
+}
+
+.location-images {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensure the full width is utilized */
-  }
+    width: 100%; 
+}
   
-  .image-container h4 {
-    font-size: 1.4vw;
-  }
+.image-container h4 {
+    font-size: 1.8vw;
+    color: #C2B19C;
+    font-family: 'Euphoria Script', cursive;
+    font-weight: lighter;
+}
   
-  .image-container img {
-    width: 40%; /* Adjust as needed */
-  }
+.image-container {
+    padding-right: 0vw; 
+    padding-left: 0vw; 
+}
+
+.image-container img {
+    width: 80%;
+}
+
+.location-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
   
-  .location-development h4 {
-    font-size: 1.6vw;
-  }
+.location-development h4 {
+    font-size: 2.2vw;
+    font-weight: lighter;
+    color: #C2B19C;
+    margin-bottom: 3vw;
+    margin-top: 8vw;
+}
   
-  .location-development p {
-    max-width: 60%;
+.location-development p {
+    max-width: 80%;
     margin: 0 auto;
-    text-align: justify;
-  }
-  
+    opacity: 70%;
+    text-align: center;
+    line-height: 2.5vw;
+    font-size: 1.6vw;
+    font-weight: lighter;
+}

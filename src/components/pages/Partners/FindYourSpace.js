@@ -1,6 +1,8 @@
 // Import
 import React, { useEffect, useState } from "react";
 import { Link, useOutletContext } from "react-router-dom";
+import Test1 from "../../photos/Test1.jpg";
+import Test2 from "../../photos/Test2.jpg";
 
 const FindYourSpace = () => {
     const { franchiseLocationsState: [franchiseLocations, setFranchiseLocations] } = useOutletContext();
@@ -31,25 +33,25 @@ const FindYourSpace = () => {
                 {franchiseLocations.map((location, index) => (
                     <div className="location" key={location.id}>
                         <div className="location-info">
-                            <h3>{location.name}</h3>
-                            <p>{location.address}</p>
+                            <h3 className="location-name">{location.name}</h3>
+                            <p className="location-address">{location.address}</p>
                             <Link to={`/location-details/${index}`} className="availability-link">
                                 <button>Request Availability</button>
                             </Link>
                         </div>
                         <div className="location-images">
                             <div className="image-container">
-                                <h4>Image Title 1</h4>
-                                <img src="image1.jpg" alt="Image Description 1" />
+                                <h4>The Building</h4>
+                                <img src={Test1} alt="Building" />
                             </div>
                             <div className="image-container">
-                                <h4>Image Title 2</h4>
-                                <img src="image2.jpg" alt="Image Description 2" />
+                                <h4>The Floorplan</h4>
+                                <img src={Test2} alt="Floorplan" />
                             </div>
                         </div>
                         <div className="location-development">
                             <h4>The Development</h4>
-                            <p>Description about this location.</p>
+                            <p>Jamal is located in Chicago's dynamic South Loop area, home to 26 state-of-the-art suites that cater to the modern artisan. This vibrant district, rich with cultural diversity and urban sophistication, offers a blend of historical charm and contemporary amenities. The bustling neighborhood provides a perfect backdrop for creativity, with trendy shops, eclectic dining experiences, and a thriving artistic community. Join us at Jamal in the South Loop and be a part of Chicago's exciting evolution, where elegance meets opportunity and your craft knows no bounds. Experience the future of artistry with us!</p>
                         </div>
                     </div>
                 ))}
