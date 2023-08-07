@@ -501,55 +501,60 @@ and (max-width: 812px) {
     }
   }
   
-
+/* Locations */
 .locations-section {
     text-align: center;
-}
-
-.locations-title h2 {
-    font-size: 3vw;
-}
-
-.divider {
+    margin-top: 8vw;
+  }
+  
+  .locations-title h2 {
+    font-size: 3.3vw;
+    color: #C2B19C;
+  }
+  
+  .divider {
     width: 50%;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.1); /* Thin transparent line */
-    margin: 1vh auto;
-}
-
-.location {
+    background-color: rgba(194, 177, 156, 0.33); /* Thin transparent line */
+    margin: auto;
+    margin-top: 4vw;
+  }
+  
+  .location {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
     margin: 4vh 0;
-}
-
-.location-info h3,
-.location-info p,
-.availability-link {
+  }
+  
+  .location-info h3,
+  .location-info p,
+  .availability-link {
     font-size: 1.5vw; /* Adjust as needed */
     /* Separate fonts and CSS for each element */
-}
-
-.location-images {
+  }
+  
+  .location-images {
     display: flex;
     justify-content: space-between;
-}
-
-.image-container h4 {
+    width: 100%; /* Ensure the full width is utilized */
+  }
+  
+  .image-container h4 {
     font-size: 1.4vw;
-}
-
-.image-container img {
+  }
+  
+  .image-container img {
     width: 40%; /* Adjust as needed */
-}
-
-.location-development h4 {
+  }
+  
+  .location-development h4 {
     font-size: 1.6vw;
-}
-
-.location-development p {
+  }
+  
+  .location-development p {
     max-width: 60%;
     margin: 0 auto;
     text-align: justify;
-}
+  }
+  
