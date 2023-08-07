@@ -444,67 +444,85 @@ and (max-width: 812px) {
     font-family: 'Georgia', serif;
     padding: 5vh 10vw;
     line-height: 1.6;
-  }
+}
+
+.contact-intro {
+    max-width: 50vw; 
+    margin: 0 auto;
+}
   
-  .contact-intro h2 {
+.contact-intro h2 {
     font-size: 6vw;
     color: #C2B19C;
     font-family: 'Euphoria Script', cursive;
     text-align: center;
-  }
+}
   
-  .contact-intro p {
-    font-size: 1.65vw;
+.contact-intro p {
+    font-size: 1.8vw;
     margin: 0.8vh 0;
     opacity: 70%;
     text-align: center;
-  }
+}
+
+.contact-intro a {
+    text-decoration: underline;
+    color: white; 
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6vw;
+}
   
-  .contact-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  form {
+form {
     max-width: 65vw;
     margin: 5vh auto;
-  }
+}
   
-  .form-group {
+.form-group {
     display: flex;
     flex-direction: column;
     margin: 1vh 0;
-  }
+}
   
-  .form-group:nth-child(1) {
+.form-group:nth-child(1) {
     flex-direction: row; 
     justify-content: space-between; 
-  }
+}
+
+.required-text {
+    font-style: italic;
+    font-size: 80%;
+}
   
-  .name-field {
+.name-field {
     width: 46.5%;
     display: flex;
     flex-direction: column; 
-  }
+}
 
-  .name-field:first-child {
+.name-field:first-child {
     margin-right: 3%; 
-  }
-  
-  .form-group:nth-child(1) label,
-  .form-group:nth-child(1) input {
+}
+
+.form-group:nth-child(1) label,
+.form-group:nth-child(1) input {
     width: 100%; 
-  }
+}
   
   label {
-    font-size: 1.2vh; 
+    font-size: 1.3vh; 
     color: #C2B19C;
     display: block; /* Ensures the labels are above the input boxes */
     margin-bottom: 0.5vh;
-  }
+}
   
-  input {
+input {
     width: 100%;
     padding: 1vh 1vw;
     font-size: 1.6vh;
@@ -512,14 +530,43 @@ and (max-width: 812px) {
     background-color: #1b1b1b;
     color: white;
     opacity: 70%;
-  }
-  
-  input[name="firstName"],
-  input[name="lastName"] {
-    width: 48%;
-  }
+}
 
-  select {
+#interestedLocations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location-option label {
+    display: flex;
+    align-items: center;
+}
+
+.location-option label input[type="checkbox"] {
+    margin-right: 2vh;
+}
+
+input[type="checkbox"] {
+    width: 1.3vw;
+    height: 1.3vh;
+}
+
+.location-option span {
+    color: #C2B19C;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+input#howDidYouFindUs {
+    height: 6vh;
+}
+  
+input[name="firstName"],
+input[name="lastName"] {
+    width: 48%;
+}
+
+select {
     width: 105%;
     padding: 1vh 1vw;
     font-size: 1.6vh;
@@ -534,9 +581,7 @@ and (max-width: 812px) {
     background-position: right 1vw center;
 }
 
-
-  
-  .send-button {
+.send-button {
     background-color: #C2B19C;
     border-radius: 0.5vw;
     color: black;
@@ -551,17 +596,17 @@ and (max-width: 812px) {
     transition: background-color 0.3s ease;
     display: block; 
     margin: auto; 
-  }
+    margin-top: 2vw;
+}
   
-  .send-button:hover {
+.send-button:hover {
     background-color: #a7a294;
     transform: scale(1.05);
-  }
+}
   
-  .send-button:active {
+.send-button:active {
     opacity: 0.7;
-  }
-  
+}
   
 
 /* Pages-Partners: Find Your Space */
@@ -571,31 +616,31 @@ and (max-width: 812px) {
     align-items: center;
     padding: 4vh 4vw;
     margin-top: 8vh;
-  }
+}
   
-  .title-section {
+.title-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+}
   
-  .text-content {
+.text-content {
     width: 40vw;
     padding-right: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .text-content h1 {
+.text-content h1 {
     font-size: 5vw;
     font-family: 'Euphoria Script', cursive;
     text-align: center;
     color: #C2B19C;
-  }
+}
   
-  .text-content p {
+.text-content p {
     font-size: 1.6vw;
     font-weight: lighter;
     opacity: 70%;
@@ -604,29 +649,29 @@ and (max-width: 812px) {
     max-width: 30vw;
     margin: 0 auto;
     margin-bottom: 1.4vw;
-  }
+}
   
-  .video-content {
+.video-content {
     width: 48vw;
     padding-left: 2vw;
-  }
+}
   
-  .video-content iframe {
+.video-content iframe {
     width: 100%;
     height: calc(45vw * 9 / 16);
-  }
+}
   
-  .video-caption {
+.video-caption {
     font-size: 1.2vw;
     font-style: italic;
-  }
+}
   
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .text-content p {
       line-height: 1.2;
       margin-bottom: 1vh;
     }
-  }
+}
   
 /* Locations */
 .locations-section {
