@@ -14,6 +14,7 @@ import Homepage from "./components/utilities/Homepage";
 import Locations from "./components/pages/Customers/Locations";
 
 // Import Pages: Partners
+import Contact from "./components/pages/Partners/Contact";
 import FindYourSpace from "./components/pages/Partners/FindYourSpace";
 
 // Browser Router 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 index:true,
                 element: <Homepage />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
             },
             {
                 path: "/find-your-space",

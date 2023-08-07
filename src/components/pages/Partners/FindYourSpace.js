@@ -35,7 +35,7 @@ const FindYourSpace = () => {
                         <div className="location-info">
                             <h3 className="location-name">{location.name}</h3>
                             <p className="location-address">{location.address}</p>
-                            <Link to={`/location-details/${index}`} className="availability-link">
+                            <Link to="/contact" className="availability-link">
                                 <button>Request Availability</button>
                             </Link>
                         </div>
