@@ -5,8 +5,8 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
     overflow-x: hidden; /* Prevents horizontal scrolling if width > vw */
 }
 
@@ -443,26 +443,33 @@ and (max-width: 812px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4vh 4vw; 
-    margin-top: 8vh; 
-}
-
-.text-content {
-    width: 40vw; 
+    padding: 4vh 4vw;
+    margin-top: 8vh;
+  }
+  
+  .title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-content {
+    width: 40vw;
     padding-right: 2vw;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-}
-
-.text-content h1 {
+    align-items: center;
+  }
+  
+  .text-content h1 {
     font-size: 5vw;
     font-family: 'Euphoria Script', cursive;
     text-align: center;
     color: #C2B19C;
-}
-
-.text-content p {
+  }
+  
+  .text-content p {
     font-size: 1.6vw;
     opacity: 70%;
     text-align: justify;
@@ -470,28 +477,79 @@ and (max-width: 812px) {
     max-width: 30vw;
     margin: 0 auto;
     margin-bottom: 1.4vw;
-}
-
-.video-content {
-    width: 48vw; 
-    padding-left: 2vw; 
-}
-
-.video-content iframe {
+  }
+  
+  .video-content {
+    width: 48vw;
+    padding-left: 2vw;
+  }
+  
+  .video-content iframe {
     width: 100%;
-    height: calc(45vw * 9 / 16); 
-}
-
-
-.video-caption {
+    height: calc(45vw * 9 / 16);
+  }
+  
+  .video-caption {
     font-size: 1.2vw;
     font-style: italic;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .text-content p {
+      line-height: 1.2;
+      margin-bottom: 1vh;
+    }
+  }
+  
+
+.locations-section {
+    text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .text-content p {
-      line-height: 1.2; 
-      margin-bottom: 1vh; 
-    }
+.locations-title h2 {
+    font-size: 3vw;
 }
-  
+
+.divider {
+    width: 50%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1); /* Thin transparent line */
+    margin: 1vh auto;
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4vh 0;
+}
+
+.location-info h3,
+.location-info p,
+.availability-link {
+    font-size: 1.5vw; /* Adjust as needed */
+    /* Separate fonts and CSS for each element */
+}
+
+.location-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container h4 {
+    font-size: 1.4vw;
+}
+
+.image-container img {
+    width: 40%; /* Adjust as needed */
+}
+
+.location-development h4 {
+    font-size: 1.6vw;
+}
+
+.location-development p {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}

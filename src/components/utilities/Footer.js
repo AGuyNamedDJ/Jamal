@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className="column">
                     <h3>Client Services</h3>
                     <Link to="/careers">Careers</Link>
-                    <Link to="/lease">Lease with Us</Link>
+                    <Link to="/find-your-space">Lease with Us</Link>
                     <Link to="/faq">FAQ</Link>
                     <Link to="/sitemap">Sitemap</Link>
                     <Link to="/contact-us">Contact Us</Link>
