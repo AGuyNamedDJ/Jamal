@@ -451,15 +451,6 @@ and (max-width: 812px) {
     font-family: 'Roboto Serif', serif;
 }
 
-.FranchiseLocations-info h2 {
-    font-family: 'Euphoria Script', cursive;
-}
-
-.FranchiseLocations-info p {
-    color: white;
-    opacity: 70%;
-}
-
 .FranchiseLocations-divider {
     width: 50%;
     height: 1px;
@@ -481,6 +472,16 @@ and (max-width: 812px) {
     font-size: 1.7vw !important;
     font-weight: lighter;
     color: #C2B19C;
+}
+
+.FranchiseLocations-info h2 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 4vw;
+}
+
+.FranchiseLocations-info p {
+    color: white;
+    opacity: 70%;
 }
 
 .franchise-video-content {
