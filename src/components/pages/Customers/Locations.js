@@ -5,15 +5,15 @@ import { Link, useOutletContext } from "react-router-dom";
 // Functional Component
 const Locations = () => {
     const { franchiseLocationsState: [franchiseLocations, setFranchiseLocations] } = useOutletContext();
-    return (
-        <div>
-            <h1>Locations</h1>
-            {franchiseLocations.map((location, index) => (
-                <div key={index}>
+        return (
+            <div className="FranchiseLocations-container">
+                <h1 className="FranchiseLocations-title">Locations</h1>
+                {franchiseLocations.map((location, index) => (
+                <div key={index} className="FranchiseLocations-locationCard">
                     <h2>
-                    <Link to={`/locations/${location.id}`}>
-                        {location.name}
-                    </Link>
+                        <Link to={`/locations/${location.id}`}>
+                            {location.name}
+                        </Link>
                     </h2>
                     <img src={location.imageUrl} alt={location.name} />
                     <p>{location.address}</p>

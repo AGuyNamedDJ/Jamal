@@ -436,6 +436,58 @@ and (max-width: 812px) {
 /* Pages-Admins: Location */
 
 /* Pages-Customers: Location */
+.FranchiseLocations-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4vh 4vw;
+    margin-top: 8vw;
+}
+
+.FranchiseLocations-title {
+    font-size: 3.3vw;
+    font-weight: lighter;
+    color: #C2B19C;
+    font-family: 'Roboto Serif', serif;
+}
+
+.FranchiseLocations-locationCard {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 4vh 0;
+}
+
+.FranchiseLocations-locationCard h2 a {
+    font-size: 3.8vw !important;
+    font-weight: lighter;
+    color: #C2B19C;
+    font-family: 'Euphoria Script', cursive;
+    margin-top: 1vw;
+    text-decoration: none;
+}
+
+.FranchiseLocations-locationCard p {
+    font-size: 1.7vw !important;
+    font-weight: lighter;
+    margin-top: -1vw;
+    color: #C2B19C;
+    margin-bottom: 3vw;
+}
+
+.FranchiseLocations-locationCard img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .FranchiseLocations-locationCard h2 a,
+    .FranchiseLocations-locationCard p {
+        font-size: 1.2vw;
+        line-height: 1.2;
+        margin-bottom: 1vh;
+    }
+}
+
 
 /* Pages-Partners: Contact */
 .contact-page {
