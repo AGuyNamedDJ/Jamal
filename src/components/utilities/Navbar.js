@@ -47,11 +47,11 @@ const Navbar = ({}) => {
                 </div>
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
-                        <Link to="/locations" className="navbar-mobile-link"><span className="link-text">Locations</span></Link>
-                        <Link to="/book" className="navbar-mobile-link"><span className="link-text">Appointments</span></Link>
-                        <Link to="/join" className="navbar-mobile-link"><span className="link-text">Lease</span></Link>
-                        <Link to="/about" className="navbar-mobile-link"><span className="link-text">About</span></Link>
-                        <Link to="/account" className="navbar-mobile-link"><span className="link-text">MyJamāl</span></Link>
+                        <Link to="/locations" className="navbar-mobile-link" onClick={() => setDropdownOpen(false)}><span className="link-text">Locations</span></Link>
+                        <Link to="/book" className="navbar-mobile-link" onClick={() => setDropdownOpen(false)}><span className="link-text">Appointments</span></Link>
+                        <Link to="/join" className="navbar-mobile-link" onClick={() => setDropdownOpen(false)}><span className="link-text">Lease</span></Link>
+                        <Link to="/about" className="navbar-mobile-link" onClick={() => setDropdownOpen(false)}><span className="link-text">About</span></Link>
+                        <Link to="/account" className="navbar-mobile-link" onClick={() => setDropdownOpen(false)}><span className="link-text">MyJamāl</span></Link>
                     </div>
                 )}
             </nav>
