@@ -461,8 +461,9 @@ and (max-width: 812px) {
 
 .FranchiseLocations-locationCard {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin: 4vh 0;
 }
 
@@ -487,6 +488,11 @@ and (max-width: 812px) {
     width: 80%;
 }
 
+.FranchiseLocations-info {
+    width: 48%; /* Adjust the width as needed */
+    text-align: left;
+}
+
 .franchise-video-content {
     width: 48vw;
     padding-left: 2vw;
@@ -495,6 +501,12 @@ and (max-width: 812px) {
 .franchise-video-content iframe {
     width: 100%;
     height: calc(45vw * 9 / 16);
+}
+
+.FranchiseLocations-detailButtonContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 2vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -506,6 +518,11 @@ and (max-width: 812px) {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .FranchiseLocations-locationCard {
+        flex-direction: column;
+    }
+}
 
 /* Pages-Partners: Contact */
 .contact-page {
