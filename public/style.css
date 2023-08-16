@@ -451,10 +451,19 @@ and (max-width: 812px) {
     font-family: 'Roboto Serif', serif;
 }
 
+.FranchiseLocations-info h2 {
+    font-family: 'Euphoria Script', cursive;
+}
+
+.FranchiseLocations-info p {
+    color: white;
+    opacity: 70%;
+}
+
 .FranchiseLocations-divider {
     width: 50%;
     height: 1px;
-    background-color: rgba(194, 177, 156, 0.33); /* You can adjust color and opacity */
+    background-color: rgba(194, 177, 156, 0.33);
     margin: auto;
     margin-top: 4vw;
 }
@@ -462,35 +471,16 @@ and (max-width: 812px) {
 .FranchiseLocations-locationCard {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 4vh 0;
 }
 
-.FranchiseLocations-locationCard h2 a {
-    font-size: 3.8vw !important;
-    font-weight: lighter;
-    color: #C2B19C;
-    font-family: 'Euphoria Script', cursive;
-    margin-top: 1vw;
-    text-decoration: none;
-}
-
-.FranchiseLocations-locationCard p {
+.FranchiseLocations-info {
+    padding-left: 5vw; 
     font-size: 1.7vw !important;
     font-weight: lighter;
-    margin-top: -1vw;
     color: #C2B19C;
-    margin-bottom: 3vw;
-}
-
-.FranchiseLocations-locationCard img {
-    width: 80%;
-}
-
-.FranchiseLocations-info {
-    width: 48%; /* Adjust the width as needed */
-    text-align: left;
 }
 
 .franchise-video-content {
@@ -504,25 +494,16 @@ and (max-width: 812px) {
 }
 
 .FranchiseLocations-detailButtonContainer {
-    width: 100%;
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 2vh;
 }
 
 @media only screen and (max-width: 768px) {
-    .FranchiseLocations-locationCard h2 a,
-    .FranchiseLocations-locationCard p {
-        font-size: 1.2vw;
-        line-height: 1.2;
-        margin-bottom: 1vh;
+    .FranchiseLocations-info {
+        padding-left: 2vw; 
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .FranchiseLocations-locationCard {
-        flex-direction: column;
-    }
-}
 
 /* Pages-Partners: Contact */
 .contact-page {
@@ -760,7 +741,7 @@ select {
     }
 }
   
-/* Locations */
+/* Lease with Us */
 .locations-section {
     text-align: center;
     margin-top: 8vw;
@@ -860,7 +841,6 @@ select {
     justify-content: center;
     width: 100%;
 }
-
   
 .location-development h4 {
     font-size: 2.2vw;
