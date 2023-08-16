@@ -451,6 +451,14 @@ and (max-width: 812px) {
     font-family: 'Roboto Serif', serif;
 }
 
+.FranchiseLocations-divider {
+    width: 50%;
+    height: 1px;
+    background-color: rgba(194, 177, 156, 0.33); /* You can adjust color and opacity */
+    margin: auto;
+    margin-top: 4vw;
+}
+
 .FranchiseLocations-locationCard {
     display: flex;
     flex-direction: column; 
@@ -477,6 +485,16 @@ and (max-width: 812px) {
 
 .FranchiseLocations-locationCard img {
     width: 80%;
+}
+
+.franchise-video-content {
+    width: 48vw;
+    padding-left: 2vw;
+}
+
+.franchise-video-content iframe {
+    width: 100%;
+    height: calc(45vw * 9 / 16);
 }
 
 @media only screen and (max-width: 768px) {

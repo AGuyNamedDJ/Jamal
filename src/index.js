@@ -12,6 +12,7 @@ import Homepage from "./components/utilities/Homepage";
 
 // Import Pages: Customers
 import Locations from "./components/pages/Customers/Locations";
+import LocationsDetial from "./components/pages/Customers/LocationsDetail";
 
 // Import Pages: Partners
 import Contact from "./components/pages/Partners/Contact";
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "/locations",
                 element: <Locations />
+            },
+            {
+                path: "/locations/:id",
+                element: <LocationsDetial />
             },
         ]
     }
