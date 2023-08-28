@@ -35,8 +35,9 @@ const LocationsDetail = () => {
                     <h1>{locationDetail.name}</h1> :
                     <p>Name not available</p>
                 }
+                <p><Link to="/contact-us" className="contact-link">Contact Us</Link> for suite availability, amenities, and requirements.</p>
             </div>
-    
+
             {/* Relevant Suites in the Middle */}
             <div id="salon-suites-grid">
                 { salonSuites.length > 0 ? 
