@@ -245,7 +245,7 @@ const FetchForHomepage = () => {
                 console.log("Response", response)
                 const salonSuitesData = await response.json();
                 console.log("Translated Salon Suites Data:", salonSuitesData);
-                setSalonRenters(salonSuitesData);
+                setSalonSuites(salonSuitesData);
             } catch (error) {
                 console.log ("Error fetching Salon Suites Data!")
                 console.log(error)

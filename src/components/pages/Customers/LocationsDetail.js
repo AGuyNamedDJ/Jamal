@@ -37,20 +37,22 @@ const LocationsDetail = () => {
                 }
             </div>
     
-            {/* Relevant Suites in the Middle */}
-            <div id="relevant-suites">
-                <h2>Salon Suites</h2>
-                <ul>
-                    {salonSuites.map((suite, index) => (
-                        <li key={index}>
-                            Suite Number: {suite.suite_number}, Services: {suite.services}
-                        </li>
-                    ))}
-                </ul>
+{/* Relevant Suites in the Middle */}
+<div id="salon-suites-grid">
+    { salonSuites.length > 0 ? 
+        salonSuites.map((suite, index) => (
+            <div className="suite-item" key={index}>
+                <h3>{suite.suite_number}</h3>
+                <p>{suite.services}</p>
             </div>
+        ))
+        : <p>No Suites Available</p>
+    }
+</div>
+
     
             {/* Other Location Details at the Bottom */}
-            <div id="other-details">
+            {/* <div id="other-details">
                 <p>{locationDetail.address ? `Address: ${locationDetail.address}` : 'Address not available'}</p>
                 <p>{locationDetail.city ? `City: ${locationDetail.city}` : 'City not available'}</p>
                 <p>{locationDetail.state ? `State: ${locationDetail.state}` : 'State not available'}</p>
@@ -60,7 +62,7 @@ const LocationsDetail = () => {
                 <p>{locationDetail.business_hours ? `Business Hours: ${locationDetail.business_hours}` : 'Business hours not available'}</p>
                 <p>{locationDetail.email ? `Email: ${locationDetail.email}` : 'Email not available'}</p>
                 <p>{locationDetail.additional_info ? `Additional Info: ${locationDetail.additional_info}` : 'Additional info not available'}</p>
-            </div>
+            </div> */}
     
             {/* Go Back Button */}
             <button onClick={() => navigate(-1)} id="go-back-button">Back</button>
