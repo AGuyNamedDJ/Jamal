@@ -1,11 +1,10 @@
 // Import
 import React, { useState, useEffect} from "react";
-import { useNavigate, useParams } from "react-router-dom";
-// import { useOutletContext } from "your-context-file"; // Uncomment if you're using it
+import { useNavigate, useOutletContext, Link, useParams } from "react-router-dom";
 
 // Functional Component
 const LocationsDetail = () => {
-    // const { franchiseLocationsState: [franchiseLocations, setFranchiseLocations] } = useOutletContext(); // Uncomment if you're using it
+    const { salonSuitesState: [salonSuites, setSalonSuites] } = useOutletContext();
     const navigate = useNavigate();
     const {id} = useParams();
     const [locationDetail, setLocationDetail] = useState({});
@@ -29,22 +28,40 @@ const LocationsDetail = () => {
 
     return (
         <div>
+            {/* Store Location at the Top */}
             <div id="location-details">
-                {/* Name */}
                 {
-                    locationDetail.name ? // Fixed variable name
+                    locationDetail.name ?
                     <h1>{locationDetail.name}</h1> :
                     <p>Name not available</p>
                 }
-                {/* Address */}
-                {
-                    locationDetail.address ? // Fixed variable name
-                    <p>{locationDetail.address}</p> :
-                    <p>Address not available</p>
-                }
-                {/* Other Details ... */}
             </div>
-            
+    
+            {/* Relevant Suites in the Middle */}
+            <div id="relevant-suites">
+                <h2>Salon Suites</h2>
+                <ul>
+                    {salonSuites.map((suite, index) => (
+                        <li key={index}>
+                            Suite Number: {suite.suite_number}, Services: {suite.services}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+    
+            {/* Other Location Details at the Bottom */}
+            <div id="other-details">
+                <p>{locationDetail.address ? `Address: ${locationDetail.address}` : 'Address not available'}</p>
+                <p>{locationDetail.city ? `City: ${locationDetail.city}` : 'City not available'}</p>
+                <p>{locationDetail.state ? `State: ${locationDetail.state}` : 'State not available'}</p>
+                <p>{locationDetail.zip_code ? `Zip Code: ${locationDetail.zip_code}` : 'Zip Code not available'}</p>
+                <p>{locationDetail.country ? `Country: ${locationDetail.country}` : 'Country not available'}</p>
+                <p>{locationDetail.phone_number ? `Phone: ${locationDetail.phone_number}` : 'Phone number not available'}</p>
+                <p>{locationDetail.business_hours ? `Business Hours: ${locationDetail.business_hours}` : 'Business hours not available'}</p>
+                <p>{locationDetail.email ? `Email: ${locationDetail.email}` : 'Email not available'}</p>
+                <p>{locationDetail.additional_info ? `Additional Info: ${locationDetail.additional_info}` : 'Additional info not available'}</p>
+            </div>
+    
             {/* Go Back Button */}
             <button onClick={() => navigate(-1)} id="go-back-button">Back</button>
         </div>
