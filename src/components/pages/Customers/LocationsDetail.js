@@ -1,6 +1,7 @@
 // Import
 import React, { useState, useEffect} from "react";
 import { useNavigate, useOutletContext, Link, useParams } from "react-router-dom";
+import Test1 from "../../photos/Test1.jpg";
 
 // Functional Component
 const LocationsDetail = () => {
@@ -35,6 +36,7 @@ const LocationsDetail = () => {
                     <h1>{locationDetail.name}</h1> :
                     <p>Name not available</p>
                 }
+                    <img src={Test1} alt="Building" />
                 <p><Link to="/contact-us" className="contact-link">Contact Us</Link> for suite availability, amenities, and requirements.</p>
             </div>
 
