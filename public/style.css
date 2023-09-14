@@ -509,50 +509,56 @@ and (max-width: 812px) {
 #location-details {
     text-align: center;
     margin-top: 8vw;
-  }
+}
   
-  #location-details h1 {
+#location-details h1 {
     font-size: 4vw;
     font-weight: lighter;
     font-family: 'Euphoria Script', cursive;
     color: #C2B19C;
-  }
+}
   
-  #location-details img {
+#location-details img {
     width: 50%;
     margin: 2vw auto;
-  }
+}
   
-  .contact-link {
-    text-decoration: underline;
-    font-size: 1.5vw;
-  }
+.contact-link {
+    text-decoration: none;
+    color: white;
+    opacity: 0/7;
+    font-size: 1.7vw;
+}
+
+#location-details p{
+    opacity: 0.7;
+}
   
   /* Salon Suites */
-  #salon-suites-grid {
+#salon-suites-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4vw;
-  }
+}
   
-  .suite-item h3, .suite-item p {
+.suite-item h3, .suite-item p {
     font-size: 1.5vw;
-  }
+}
   
   /* Other Details */
-  #other-details {
+#other-details {
     text-align: center;
     margin-top: 4vw;
-  }
+}
   
-  #other-details p {
+#other-details p {
     font-size: 1.7vw;
     margin-bottom: 1vw;
-  }
+}
   
   /* Back Button */
-  #go-back-button {
+#go-back-button {
     font-size: 0.9vw;
     background-color: #C2B19C;
     color: #FFFFFF;
@@ -561,7 +567,7 @@ and (max-width: 812px) {
     cursor: pointer;
     border-radius: 0.5vw;
     margin: 2vw auto;
-  }
+}
 
 
 /* Pages-Partners: Contact */
