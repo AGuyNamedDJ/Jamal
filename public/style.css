@@ -527,11 +527,13 @@ and (max-width: 812px) {
     text-decoration: none;
     color: white;
     opacity: 0/7;
-    font-size: 1.7vw;
+    font-size: 1vw;
 }
 
 #location-details p{
+    font-size: 1vw;
     opacity: 0.7;
+    margin-top: -1.25vw;
 }
   
   /* Salon Suites */
@@ -565,8 +567,9 @@ and (max-width: 812px) {
     padding: 1vh 2vw;
     border: none;
     cursor: pointer;
+    display: block;
     border-radius: 0.5vw;
-    margin: 2vw auto;
+    margin: auto;
 }
 
 
