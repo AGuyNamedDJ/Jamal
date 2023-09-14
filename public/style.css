@@ -545,7 +545,15 @@ and (max-width: 812px) {
 }
   
 .suite-item h3, .suite-item p {
-    font-size: 1.5vw;
+    text-align: center;
+}
+
+.suite-item h3 {
+    font-size: 1.75vw;
+}
+
+.suite-item p {
+    font-size: 1.3vw;
 }
   
   /* Other Details */
@@ -555,7 +563,7 @@ and (max-width: 812px) {
 }
   
 #other-details p {
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     margin-bottom: 1vw;
 }
   
