@@ -549,7 +549,8 @@ and (max-width: 812px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4vw;
+    text-align: center;
+    margin-top: 2vw;
 }
   
 .suite-item h3, .suite-item p {
@@ -562,6 +563,7 @@ and (max-width: 812px) {
 
 .suite-item p {
     font-size: 1.3vw;
+    opacity: 0.7;
 }
   
   /* Other Details */
@@ -570,6 +572,8 @@ and (max-width: 812px) {
     margin-top: 4vw;
     padding: 0 33vw;
     line-height: 2vh;
+    opacity: 0.7;
+    margin-bottom: 8vw;
 }
   
 #other-details p {

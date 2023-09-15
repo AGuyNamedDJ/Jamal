@@ -44,8 +44,7 @@ const LocationsDetail = () => {
             <div id="other-details">
                 <p>{locationDetail.address ? `Address: ${locationDetail.address}` : 'Address not available'}</p>
                 <p>{locationDetail.city ? `City: ${locationDetail.city}` : 'City not available'} | {locationDetail.state ? `State: ${locationDetail.state}` : 'State not available'}</p>
-                <p>{locationDetail.zip_code ? `Zip Code: ${locationDetail.zip_code}` : 'Zip Code not available'}</p>
-                <p>{locationDetail.country ? `Country: ${locationDetail.country}` : 'Country not available'}</p>
+                <p>{locationDetail.zip_code ? `Zip Code: ${locationDetail.zip_code}` : 'Zip Code not available'} {locationDetail.country ? `Country: ${locationDetail.country}` : 'Country not available'}</p>
                 <p>{locationDetail.phone_number ? `Phone: ${locationDetail.phone_number}` : 'Phone number not available'}</p>
                 <p>{locationDetail.business_hours ? `Business Hours: ${locationDetail.business_hours}` : 'Business hours not available'}</p>
                 <p>{locationDetail.email ? `Email: ${locationDetail.email}` : 'Email not available'}</p>
