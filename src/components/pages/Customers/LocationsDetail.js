@@ -39,6 +39,21 @@ const LocationsDetail = () => {
                     <img src={Test1} alt="Building" />
                 <p><Link to="/contact-us" className="contact-link">Contact Us</Link> for suite availability, amenities, and requirements.</p>
             </div>
+    
+            {/* Other Location Details at the Bottom */}
+            <div id="other-details">
+                <p>{locationDetail.address ? `Address: ${locationDetail.address}` : 'Address not available'}</p>
+                <p>{locationDetail.city ? `City: ${locationDetail.city}` : 'City not available'} | {locationDetail.state ? `State: ${locationDetail.state}` : 'State not available'}</p>
+                <p>{locationDetail.zip_code ? `Zip Code: ${locationDetail.zip_code}` : 'Zip Code not available'}</p>
+                <p>{locationDetail.country ? `Country: ${locationDetail.country}` : 'Country not available'}</p>
+                <p>{locationDetail.phone_number ? `Phone: ${locationDetail.phone_number}` : 'Phone number not available'}</p>
+                <p>{locationDetail.business_hours ? `Business Hours: ${locationDetail.business_hours}` : 'Business hours not available'}</p>
+                <p>{locationDetail.email ? `Email: ${locationDetail.email}` : 'Email not available'}</p>
+                <p>{locationDetail.additional_info ? `Additional Info: ${locationDetail.additional_info}` : 'Additional info not available'}</p>
+            </div>
+
+            {/* Directory Title */}
+            <h2 className="directory-title">Suite Directory</h2>
 
             {/* Relevant Suites in the Middle */}
             <div id="salon-suites-grid">
@@ -51,18 +66,6 @@ const LocationsDetail = () => {
                     ))
                     : <p>No Suites Available</p>
                 }
-            </div>
-    
-            {/* Other Location Details at the Bottom */}
-            <div id="other-details">
-                <p>{locationDetail.address ? `Address: ${locationDetail.address}` : 'Address not available'}</p>
-                <p>{locationDetail.city ? `City: ${locationDetail.city}` : 'City not available'} | {locationDetail.state ? `State: ${locationDetail.state}` : 'State not available'}</p>
-                <p>{locationDetail.zip_code ? `Zip Code: ${locationDetail.zip_code}` : 'Zip Code not available'}</p>
-                <p>{locationDetail.country ? `Country: ${locationDetail.country}` : 'Country not available'}</p>
-                <p>{locationDetail.phone_number ? `Phone: ${locationDetail.phone_number}` : 'Phone number not available'}</p>
-                <p>{locationDetail.business_hours ? `Business Hours: ${locationDetail.business_hours}` : 'Business hours not available'}</p>
-                <p>{locationDetail.email ? `Email: ${locationDetail.email}` : 'Email not available'}</p>
-                <p>{locationDetail.additional_info ? `Additional Info: ${locationDetail.additional_info}` : 'Additional info not available'}</p>
             </div>
     
             {/* Go Back Button */}

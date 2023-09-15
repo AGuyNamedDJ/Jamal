@@ -522,6 +522,14 @@ and (max-width: 812px) {
     width: 50%;
     margin: 2vw auto;
 }
+
+.directory-title {
+    font-size: 3vw;
+    color: #C2B19C;
+    text-align: center;
+    font-family: 'Euphoria Script', cursive;
+    margin-top: 4.4vw;
+}
   
 .contact-link {
     text-decoration: none;
@@ -560,6 +568,8 @@ and (max-width: 812px) {
 #other-details {
     text-align: center;
     margin-top: 4vw;
+    padding: 0 33vw;
+    line-height: 2vh;
 }
   
 #other-details p {
@@ -578,6 +588,8 @@ and (max-width: 812px) {
     display: block;
     border-radius: 0.5vw;
     margin: auto;
+    margin-bottom: 4vw;
+    margin-top: 2vw;
 }
 
 
